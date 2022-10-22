@@ -17,7 +17,7 @@ script:
   - docker --version # print the version for logging
   - docker build -t simple-node .
   - docker tag simple-node bishoyabdo/simple-node:latest
-  - export FAVORITE_FOOD=pizza
+  #- export FAVORITE_FOOD=pizza  # we need to use traivs env instead
   - node server.js
 
 after_success:
